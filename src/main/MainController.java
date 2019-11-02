@@ -34,4 +34,12 @@ public class MainController {
         window.setScene(new Scene(comboBoxViewParent));
         window.show();
     }
+
+    public void handleCheckBoxViewButtonAction(ActionEvent actionEvent) throws IOException {
+        Parent comboBoxViewParent = FXMLLoader.load(getClass().getResource("../checkbox/CheckBoxView.fxml"));
+        Stage window = new Stage();
+        window.setTitle("CheckBox");
+        window.setScene(new Scene(comboBoxViewParent));
+        window.show();
+    }
 }

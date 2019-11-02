@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="checkbox.CheckBoxController">
+   <children>
+      <VBox layoutX="24.0" layoutY="12.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+         <children>
+            <CheckBox fx:id="peperoniCheckBox" mnemonicParsing="false" text="Peperoni" />
+            <CheckBox fx:id="saliamiCheckBox" mnemonicParsing="false" text="Saliami" />
+            <CheckBox fx:id="hawaiCheckBox" mnemonicParsing="false" text="Hawai" />
+            <Button mnemonicParsing="false" onAction="#pizzaOrderButtonPushed" text="Order pizza" />
+            <Label fx:id="pizzaOrderLabel" text="Label" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

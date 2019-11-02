@@ -9,5 +9,6 @@
       <Label fx:id="lblStatus" layoutX="139.0" layoutY="48.0" text="Label" />
       <Button layoutX="116.0" layoutY="75.0" mnemonicParsing="false" onAction="#handleLoginViewButtonAction" text="Login view" />
       <Button layoutX="113.0" layoutY="116.0" mnemonicParsing="false" onAction="#handleComboBoxViewButtonAction" text="ComboBox" />
+      <Button layoutX="105.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleCheckBoxViewButtonAction" text="CheckBox" />
    </children>
 </AnchorPane>
