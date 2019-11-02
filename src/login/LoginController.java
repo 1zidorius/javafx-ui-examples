@@ -14,7 +14,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class LoginModel {
+public class LoginController {
     @FXML
     private Label lblStatus;
 
@@ -29,13 +29,13 @@ public class LoginModel {
 
     @FXML
     void initialize() {
-        LoginViewModel loginViewModel = new LoginViewModel();
+        LoginModel loginViewModel = new LoginModel();
         usernameTextField.textProperty().bindBidirectional(loginViewModel.usernameProperty());
         passwordTextField.textProperty().bindBidirectional(loginViewModel.passwordProperty());
         loginButton.disableProperty().bind(loginViewModel.isLoginPossibleProperty().not());
     }
 
-    public void Login(javafx.event.ActionEvent actionEvent) throws IOException {
+    public void Login(ActionEvent actionEvent) throws IOException {
         if (usernameTextField.getText().equals("user") && passwordTextField.getText().equals("pass")) {
             lblStatus.setText("Login success");
         } else {

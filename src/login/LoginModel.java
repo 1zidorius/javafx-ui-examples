@@ -5,12 +5,12 @@ import javafx.beans.property.ReadOnlyBooleanWrapper;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
-public class LoginViewModel {
+public class LoginModel {
     private final StringProperty username = new SimpleStringProperty();
     private final StringProperty password = new SimpleStringProperty();
     private final ReadOnlyBooleanWrapper loginPossible = new ReadOnlyBooleanWrapper();
 
-    public LoginViewModel() {
+    public LoginModel() {
         loginPossible.bind(username.isNotEmpty().and(password.isNotEmpty()));
     }
 
