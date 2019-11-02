@@ -25,4 +25,5 @@ public class LoginViewModel {
     public ReadOnlyBooleanProperty isLoginPossibleProperty() {
         return loginPossible.getReadOnlyProperty();
     }
+
 }
