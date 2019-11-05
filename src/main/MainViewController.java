@@ -52,4 +52,12 @@ public class MainViewController {
         window.setScene(new Scene(tableViewParent));
         window.show();
     }
+
+    public void handleAlertButtonAction(ActionEvent actionEvent) throws IOException {
+        Parent tableViewParent = FXMLLoader.load(getClass().getResource("../alertbox/AlertView.fxml"));
+        Stage window = new Stage();
+        window.setTitle("Alert");
+        window.setScene(new Scene(tableViewParent));
+        window.show();
+    }
 }

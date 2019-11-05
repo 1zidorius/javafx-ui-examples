@@ -14,6 +14,7 @@
             <Button mnemonicParsing="false" onAction="#handleComboBoxViewButtonAction" text="ComboBox" />
             <Button mnemonicParsing="false" onAction="#handleCheckBoxViewButtonAction" text="CheckBox" />
             <Button mnemonicParsing="false" onAction="#handleTableViewButtonAction" text="Table" />
+            <Button mnemonicParsing="false" onAction="#handleAlertButtonAction" text="Alert" />
          </children>
       </VBox>
    </children>
